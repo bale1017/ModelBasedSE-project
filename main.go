@@ -90,12 +90,14 @@ func main() {
 	N := 1000000000
 
 	var t int64 = 0
-	t0 := time.Now()
+	start := time.Now()
+	fmt.Printf("Start @ %s\n", start)
 	for i := 0; i < N; i++ {
 		sumArea_Lookup(r, s)
 	}
-	t1 := time.Now()
-	diff := t1.Sub(t0)
+	end := time.Now()
+	fmt.Printf("End @ %s\n", end)
+	diff := time.Since(start)
 	fmt.Printf("diff=%d\n", diff)
 	milli := diff.Nanoseconds()
 	fmt.Printf("milli=%d\n", milli)
