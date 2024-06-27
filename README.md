@@ -1,4 +1,4 @@
-# Modelbasierte Software-Entwicklung: Project
+# Modelbasierte Software-Entwicklung: P2 Translating “generics”
 
 | Name | Kürzel | Matrikelnummer |
 | ---- | ------ | -------------- |
