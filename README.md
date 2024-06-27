@@ -1,7 +1,9 @@
 # Modelbasierte Software-Entwicklung: Project
 
-Marco Janotta, jama1028, Mtr-Nr 
-Leonard Bausenwein, bale1017, Mtr-Nr 63554
+| Name | Kürzel | Matrikelnummer |
+| ---- | ------ | -------------- |
+| Marco Janotta | jama1028 | 67886 |
+| Leonard Bausenwein | bale1017 | 63554 |
 
 Programmausgabe:
 ```
