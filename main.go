@@ -255,10 +255,18 @@ func swap_bool(x *bool, y *bool) {
 	*y = tmp
 }
 
-func swap_G(x, y *interface{}) {
+func swap_G(x *interface{}, y *interface{}) {
 	tmp := *x
 	*x = *y
 	*y = tmp
+}
+
+func test_swap_generic() {
+	x := 1
+	y := 2
+	fmt.Printf("x=%d, y=%d -> ", x, y)
+	swap_int(&x, &y)
+	fmt.Printf("x=%d, y=%d\n", x, y)
 }
 
 func test_swap_monomorphization() {
@@ -321,7 +329,7 @@ func main() {
 	fmt.Println("-------------------")
 	fmt.Println("Generic translation")
 	fmt.Println("-------------------")
-	fmt.Println("cannot use &x (value of type *int) as *interface{} value in argument to swap_G: *int does not implement *interface{} (type *interface{} is pointer to interface, not interface")
+	test_swap_generic()
 
 	fmt.Println("")
 	fmt.Println("----------------")
