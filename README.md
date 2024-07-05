@@ -48,7 +48,7 @@ EXAMPLE 3
 -------------------
 Generic translation
 -------------------
-cannot use &x (value of type *int) as *interface{} value in argument to swap_G: *int does not implement *interface{} (type *interface{} is pointer to interface, not interface
+x=1, y=2 -> x=2, y=1
 
 ----------------
 Monomorphization
